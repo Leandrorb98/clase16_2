@@ -1,0 +1,74 @@
+Entregable Clase 10
+
+#Ejercicio 1:
+
+b=int(input("Ingrese el valor de la base: "))
+a=int(input("Ingrese el valor de la altura: "))
+
+def area_rectangulo(b,a):
+    area_rectangulo = a*b
+    print("El area del rectangulo es: ",area_rectangulo) 
+
+area_rectangulo(b,a)
+
+#Ejercicio 2:
+
+import math
+pi=math.pi
+r=int(input("Ingrese el valor del radio: "))
+
+def area_circulo(r):
+    area_circulo =(r**2)*pi
+    print("El area del circulo es: ",area_circulo)
+
+area_circulo(r)
+
+#Ejercicio 3:
+
+
+def relacion(a,b):
+    if a>b:
+        print("1")
+    elif a<b:
+        print ("-1")
+    else:
+        print ("0")
+
+relacion(5,5)
+
+#Ejercicio 4:
+
+def intermedio(a,b):
+    intermedio = (a+b)/2
+    print(intermedio)
+
+intermedio(0,2)
+
+
+#Ejercicio 5:
+
+def recortar(a,b,c):
+    if a<b:
+        print(b)
+    if a>c:
+        print(c)
+    if b<a<c:
+        print(a)
+recortar(15,0,10)
+
+#Ejercicio 6:
+
+paresimpares=[0,1,2,3,4,5,6,7,8,9,10]
+pares=[]
+impares=[]
+
+def separar(paresimpares):
+    for x in paresimpares:
+        if x%2==0:
+            pares.append(x)
+        else:
+            impares.append(x)
+separar(paresimpares)
+print(pares)
+print(impares)
+

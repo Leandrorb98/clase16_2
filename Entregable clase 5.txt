@@ -1,0 +1,88 @@
+Fondo:
+
+19usd
+
+# Ejercicio 1
+num1=int(input("Ingrese un numero "))
+num2=int(input("Ingrese otro numero "))
+print("Elija una opcion: 1-Sumar ambos numeros, 2-Restar ambos numeros, 3-Multiplicar ambos numeros, 4-Fin del programa")
+op=int(input(" "))
+if op==1:
+    print(num1+num2)
+elif op == 2:
+    print(num1-num2)
+elif op == 3:
+    print(num1*num2)
+elif op == 4:
+    print("Final del programa")
+else:
+    print("Seleccione una opcion valida")
+
+
+
+# Ejercicio 2
+
+num = 2
+
+while num % 2==0:
+    num=int(input("ingrese numero impar"))
+    
+            
+print ("Fin")
+
+#Ejercicio 3
+#No se me ocurria, encontre solucion solo utilizando range
+#https://www.tutorialgateway.org/python-program-to-calculate-sum-of-odd-numbers/
+# Python Program to Calculate Sum of Odd Numbers from 1 to 100
+
+minimum = int(input(" Please Enter the Minimum Value : ")) 
+maximum = int(input(" Please Enter the Maximum Value : "))
+Oddtotal = 0
+
+for number in range(minimum, maximum+1):
+    if(number % 2 != 0):
+        print("{0}".format(number))
+        Oddtotal = Oddtotal + number
+
+print("The Sum of Odd Numbers from {0} to {1} = {2}".format(minimum, maximum, Oddtotal))
+
+
+#Ejercicio 5
+
+
+A=[0,1,2,3,4,5,6,7,8,9]
+num=10
+while num not in A:
+    num=int(input("Ingrese un entero entre 0 y 9"))
+    if num not in A:
+        print("Ingrese un numero valido")   
+    else:
+        print("El numero es correcto")
+  
+#Ejercicio 7: esta marcado como 6 en el docs
+
+lista_1 = ["h",'o','l','a',' ', 'm','u','n','d','o']
+lista_2 = ["h",'o','l','a',' ', 'l','u','n','a']
+lista_3=[]
+
+for i in lista_1:
+    if i in lista_2:
+        lista_3.append(i)
+lista_4=[]
+for x in lista_3:
+    if x not in lista_4:
+        lista_4.append(x)
+print("Lista de elementos en comun sin duplicados: ",lista_4)     
+
+#Ejercicio 4
+
+a=[]
+
+num=int(input("Cuantos numeros quiere ingresar?" ))
+while len(a)<num:
+    i=int(input("ingrese los valores: "))
+    a.append(i)
+x=sum(a)
+y=len(a)
+media_aritmetica=x/y
+print(f"la media aritmetica es:{media_aritmetica}")  

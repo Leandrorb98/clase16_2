@@ -1,0 +1,11 @@
+La funcion input() convierte la entrada, en una cadena.
+Incluso si se escribe un numero.
+Si quiero que python interprete la entrada como un numero, 
+tengo que utilizar la funcion int(), que convierte la
+string en un numero.
+Ej:
+edad=int(input("que edad tenes?")
+
+
+
+
